@@ -8,7 +8,7 @@ const styles = `
       border-right: 7px solid transparent;
       border-top: 8px solid #6d737b;
       right: 25px;
-      top: 55px;
+      top: 50px;
       z-index: 2;
       transition: 0.2s;
     }
@@ -80,6 +80,10 @@ const styles = `
         font-size: 18px;
         min-height: 46px;
       }
+
+      .select__arrow {
+        top: 55px;
+      }
     }
 
     @media(min-width: 768px) {
@@ -91,6 +95,10 @@ const styles = `
       .select__option {
         font-size: 18px;
         min-height: 55px;
+      }
+     
+      .select__arrow {
+        top: 60px;
       }
     }
   </style>
