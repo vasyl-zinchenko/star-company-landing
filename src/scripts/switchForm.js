@@ -107,6 +107,8 @@ arrowRightStart.addEventListener('click', async () => {
 
       arrowRightNext.style.display = 'flex';
       arrowRightStart.style.display = 'none';
+      stepItem.forEach((item) => item.classList.remove('launching__step-item--active'));
+      stepItem[counter].classList.add('launching__step-item--active');
     }, 3000);
   }
 });

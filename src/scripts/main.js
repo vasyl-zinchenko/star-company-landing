@@ -1,3 +1,3 @@
 import './select';
-import './switch-form';
+import './switchForm';
 import './checkLogin';
