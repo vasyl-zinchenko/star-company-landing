@@ -1,0 +1,43 @@
+.error {
+  display: none;
+  align-items: center;
+  width: 200px;
+  margin-top: 5px;
+  border-radius: 4px;
+  background-color: #e22a32;
+  padding: 10px;
+
+  font-size: 11px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Arial";
+
+  @media (min-width: 425px) {
+    width: 350px;
+  }
+
+  @media (min-width: 550px) {
+    width: 200px;
+  }
+
+  @media (min-width: 768px) {
+    width: 200px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__launching {
+    width: 180px;
+    bottom: -40px;
+    justify-content: center;
+
+    @media (min-width: 425px) {
+      width: 260px;
+    }
+
+    @media (min-width: 768px) {
+      width: 383px;
+      min-height: 40px;
+    }
+  }
+}

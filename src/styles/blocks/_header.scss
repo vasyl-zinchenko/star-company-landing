@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    gap: 120px;
+  }
+
+  @media (min-width: 800px) {
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+}

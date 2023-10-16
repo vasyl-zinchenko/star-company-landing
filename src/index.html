@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <script type="module" src="./scripts/main.js"></script>
+  </head>
+
+  <body>
+    <section class="container">
+      <header class="header">
+        <img class="logo" src="/src/assets/images/logo.png" />
+
+        <form class="login-form" onsubmit="event.preventDefault()">
+          <div class="login-form__email">
+            <input
+              class="login-form__input login-form__input_email"
+              placeholder="Email"
+            />
+            <div class="error error__login-email"></div>
+          </div>
+
+          <div class="login-form__password">
+            <input
+              class="login-form__input_password login-form__input"
+              type="password"
+              placeholder="Password"
+            />
+
+            <div class="error error__login-password"></div>
+
+            <a href="#">Forgout your password?</a>
+          </div>
+          <div>
+            <button class="button login">Log in</button>
+          </div>
+        </form>
+      </header>
+
+      <main>
+        <section class="launching">
+          <section class="launching__headline">
+            <p>StarCompany DESIGNS, MANUFACTURES AND</p>
+            <p>Launches Advanced Rockets and Spacecrafts</p>
+          </section>
+
+          <section class="launching__body">
+            <button disabled="" class="launching__arrow-left">
+              <span class="arrow arrow__left"></span>
+            </button>
+
+            <section class="launching__form-container">
+              <section class="launching__form-wrapper active">
+                <section class="launching__form">
+                  <span class="launching__form__label">Who are you?</span>
+                  <select-list
+                    items='["Engineer", "Business Development Executive", "Office Manager", "Accountant", "VR Designer"]'
+                  >
+                  </select-list>
+                </section>
+              </section>
+
+              <section class="launching__form-wrapper">
+                <section class="launching__form">
+                  <span class="launching__form__label">What is your age?</span>
+                  <select-list items='["age"]'> </select-list>
+                </section>
+              </section>
+
+              <section class="launching__form-wrapper">
+                <section class="launching__form">
+                  <span class="launching__form__label">I am from</span>
+                  <input
+                    class="launching__form__input launching__form__input_address"
+                    placeholder="Input your adress"
+                  />
+                </section>
+                <p class="launching__form__address-example">
+                  <span>E.g.: New Roads or 70760</span>
+                  <span
+                    >We don’t use postal addresses to contact members
+                    directly!</span
+                  >
+                </p>
+              </section>
+
+              <section class="launching__form-wrapper">
+                <section class="launching__form">
+                  <span class="launching__form__label">Your email address</span>
+                  <input
+                    type="email"
+                    class="launching__form__input launching__form__input_email"
+                    placeholder="Input your email"
+                  />
+                </section>
+              </section>
+
+              <section class="launching__form-wrapper">
+                <section class="launching__form">
+                  <span class="launching__form__label"
+                    >Creater your password</span
+                  >
+                  <input
+                    type="password"
+                    class="launching__form__input launching__form__input_password"
+                    placeholder="•••••••••••••••"
+                  />
+                </section>
+              </section>
+
+              <div class="error error__launching"></div>
+              <section class="launching__step">
+                <div
+                  class="launching__step-item launching__step-item--active"
+                ></div>
+                <div class="launching__step-item"></div>
+                <div class="launching__step-item"></div>
+                <div class="launching__step-item"></div>
+                <div class="launching__step-item"></div>
+              </section>
+            </section>
+
+            <button
+              class="launching__arrow-right launching__arrow-right--full button"
+            >
+              Next step<span class="arrow arrow__right"></span>
+            </button>
+
+            <button
+              class="launching__arrow-right launching__arrow-right--start button"
+            >
+              Start now<span class="arrow arrow__completed"></span>
+              <span class="loader"></span>
+            </button>
+          </section>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>
